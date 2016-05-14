@@ -17,7 +17,7 @@ mobs:spawn_specific("nssm:uloboros", {"default:jungle_grass", "default:jungletre
 mobs:spawn_specific("nssm:crocodile", {"default:sand","default:water_source"}, {"air"},
 	0, 20, 60, 7000, 2, -31000, 31000)
 mobs:spawn_specific("nssm:octopus", {"default:water_source"}, {"default:water_source"},
-	0, 20, 60, 20000, 2, -31000, 0)
+	0, 20, 60, 40000, 2, -31000, 0)
 
 -- DESERT
 mobs:spawn_specific("nssm:sandworm", {"default:desert_sand", "default:desert_stone"}, {"air"},
@@ -33,7 +33,7 @@ mobs:spawn_specific("nssm:white_werewolf", {"default:dirt_with_snow","default:sn
 
 -- SKY
 mobs:spawn_specific("nssm:moonheron", {"air"}, {"air"},
-	0, 10, 100, 80000, 2, 10, 40)
+	0, 10, 100, 160000, 2, 10, 40)
 
 --mobs:spawn_specfic(name, nodes, neighbors, min_light, max_light, interval, chance,
 --	active_object_count, min_height, max_height, day_toggle)
