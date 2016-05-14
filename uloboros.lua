@@ -41,7 +41,7 @@ mobs:register_mob("nssm:uloboros", {
 	},
 	do_custom = function(self)
 
-		if math.random(1, 25) > 1 then
+		if math.random(1, 50) > 1 then
 			return
 		end
 
