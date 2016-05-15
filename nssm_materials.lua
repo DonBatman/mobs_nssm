@@ -78,6 +78,16 @@ minetest.register_ore({
 		y_max     = 200,
 			}
 )
+--abm to remove spider webs so they do not greif the world
+
+minetest.register_abm({
+	nodenames = {"nssm:web"},
+	interval = 20,
+	chance = 10,
+	action = function(pos, node, active_object_count, active_object_count_wider)
+		minetest.set_node(pos, {name = "air"})
+	end,
+})
 
 --nodes
 
@@ -97,7 +107,7 @@ minetest.register_node("nssm:web", {
 	pointable = true,
 	diggable = true,
 	buildable_to = false,
-	drop = "",
+	drop = "farming:cotton",
 	drowning = 0,
 	liquid_renewable = false,
 	liquidtype = "source",
