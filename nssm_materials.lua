@@ -83,7 +83,7 @@ minetest.register_ore({
 minetest.register_abm({
 	nodenames = {"nssm:web"},
 	interval = 20,
-	chance = 10,
+	chance = 25,
 	action = function(pos, node, active_object_count, active_object_count_wider)
 		minetest.set_node(pos, {name = "air"})
 	end,
